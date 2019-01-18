@@ -1,0 +1,5 @@
+ITEM001,Optical Mouse,All surface compatibility,575,10
+ITEM002,Wireless Mouse,Operates from a distance of 100m,1099,5
+ITEM003,Mechanical Keyboard,Sturdy rugged and ready to take a pounding,1200,10
+ITEM004,LED Monitor,Excellent resolution and sharp features,15000,5
+ITEM005,24x Webcam,High resolution,6500,15
