@@ -1,0 +1,51 @@
+create database librarydb;
+
+use librarydb;
+
+CREATE TABLE `libdb`.`transaction_tbl` (
+  `studID` INTEGER UNSIGNED NOT NULL DEFAULT 0,
+  `name` VARCHAR(45),
+  `issueDate` DATE,
+  `returnDate` DATE,
+  `bookID` INTEGER UNSIGNED,
+  PRIMARY KEY(`studID`)
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `libdb`.`book_tbl` (
+  `bookID` INTEGER UNSIGNED NOT NULL DEFAULT 0,
+  `bookName` VARCHAR(45),
+  `authorName` VARCHAR(45),
+  PRIMARY KEY(`bookID`)
+)
+ENGINE = InnoDB;
+
+insert into transaction_tbl values
+(701,'aman','2014-07-02','2014-07-13',1),
+(702,'meena','2014-08-02',null,2),
+(705,'amisha','2014-06-02','2014-06-25',7),
+(707,'vimal','2014-07-02',null,12),
+(712,'raj','2014-08-02',null,9),
+(715,'clark','2014-07-02','2014-08-20',8),
+(719,'suman','2014-06-02',null,10),
+(721,'karl','2014-07-02',null,3),
+(722,'frul','2014-05-02',null,5),
+(723,'adam','2014-08-02',null,11),
+(724,'kerry','2014-08-02','2014-08-10',4),
+(730,'maskin','2014-03-02','2014-03-28',6);
+
+
+insert into book_tbl values
+(1,'C','Amitabh'),
+(2,'Unix','Shahrukh'),
+(3,'Operating System','Salmaan'),
+(4,'Java for Beginners','Aarohi'),
+(5,'Puzzles for you','Aish'),
+(6,'Advance Perl','Abhishek'),
+(7,'Data structure','Govinda'),
+(8,'Graphics using Cpp','Ranveer'),
+(9,'Algorithms','Ranbir'),
+(10,'Cpp','Dipika'),
+(11,'Windows','Priyanka'),
+(12,'Microprocessor','Jhilmil');
+
